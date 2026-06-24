@@ -508,10 +508,10 @@ function Stock({ me, onLogout, onAdmin }) {
                         <td style={{ padding:"13px 16px" }}>
                           <div style={{ ...row({ gap:8 }) }}>
                             <Btn small bg={C.blue} onClick={()=>openAdj(p)}>± Adjust</Btn>
-                            {isAdmin && <>
-                              <Btn small outline onClick={()=>openEdit(p)}>✏️</Btn>
-                              <Btn small bg={C.red} onClick={()=>del(p.id)}>🗑️</Btn>
-                            </>}
+                            <>
+                            <Btn small outline onClick={() => openEdit(p)}>✏️</Btn>
+                            <Btn small bg={C.red} onClick={() => del(p.id)}>🗑️</Btn>
+                            </>
                           </div>
                         </td>
                       </tr>
