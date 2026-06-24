@@ -465,7 +465,9 @@ function Stock({ me, onLogout, onAdmin }) {
               ))}
             </div>
             <Btn small bg="#6B7280" onClick={fetchProducts}>🔄</Btn>
-            {isAdmin && <Btn small bg={C.accent} onClick={openAdd}>+ Add Product</Btn>}
+            <Btn small bg={C.accent} onClick={openAdd}>
+            + Add Product
+            </Btn>
           </div>
         </div>
 
